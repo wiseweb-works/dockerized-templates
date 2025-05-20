@@ -1,0 +1,39 @@
+name: Build and Publish Docker Images on Dockerfile Change
+
+on:
+  push:
+    paths:
+      - '**/Dockerfile'
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push Docker images
+        run: |
+          for dir in */ ; do
+            if [ -f "${dir}Dockerfile" ]; then
+              NAME=${dir%/}
+              IMAGE=ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}/$NAME:latest
+              echo "🔧 Building and pushing $IMAGE"
+              docker build -t $IMAGE $dir
+              docker push $IMAGE
+            fi
+          done
