@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    container_name: my-frontend-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    # Uncomment if you want to add a custom nginx configuration:
+    # volumes:
+    #   - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
