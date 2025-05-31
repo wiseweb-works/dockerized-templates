@@ -12,14 +12,10 @@ In this repository, you will find pre-configured Docker and Docker Compose setup
 
 ## Current Image Comparisons
 
-| REPOSITORY      | TAG    | IMAGE LINK     | SIZE    | 
-|:---------------:|:------:|:--------------:|:-------:|
-| vite6-typescript-slim (*)   | latest | _Not published_ | 9.91MB  |
-| vite6-typescript-default    | latest | [From ghcr.io](ghcr.io/wiseweb-works/dockerized-templates/vite6-typescript-docker:latest) | 48.4MB  |
-| nextjs15-typescript-slim (*) | latest | _Not published_ | 134MB   |
-| nextjs15-typescript  | latest | [From ghcr.io](ghcr.io/wiseweb-works/dockerized-templates/nextjs15-typescript-docker:latest) | 223MB   |
-
-(*) Slim images are built using [mintoolkit/mint (docker-slim)](https://github.com/mintoolkit/mint).
+| REPOSITORY      | TAG    | IMAGE LINK     |
+|:---------------:|:------:|:--------------:|
+| vite6-typescript-default    | latest | [From ghcr.io](ghcr.io/wiseweb-works/dockerized-templates/vite6-typescript-docker:latest) |
+| nextjs15-typescript  | latest | [From ghcr.io](ghcr.io/wiseweb-works/dockerized-templates/nextjs15-typescript-docker:latest) |
 
 ## Contributing
 
