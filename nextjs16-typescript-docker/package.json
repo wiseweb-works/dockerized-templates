@@ -9,19 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.0.8",
-    "react": "19.2.1",
-    "react-dom": "19.2.1"
+    "next": "16.1.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.17",
-    "@types/node": "^24.10.2",
-    "@types/react": "^19.2.7",
+    "@tailwindcss/postcss": "^4.1.18",
+    "@types/node": "^25.0.5",
+    "@types/react": "^19.2.8",
     "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9.39.1",
-    "eslint-config-next": "16.0.8",
-    "tailwindcss": "^4.1.17",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.1.1",
+    "tailwindcss": "^4.1.18",
     "typescript": "^5.9.3"
   }
 }
