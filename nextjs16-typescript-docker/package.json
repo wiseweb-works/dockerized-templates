@@ -3,25 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "bun --bun next dev",
+    "build": "bun --bun next build",
+    "start": "bun --bun next start",
     "lint": "eslint"
   },
   "dependencies": {
-    "next": "16.1.1",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.18",
-    "@types/node": "^25.0.5",
-    "@types/react": "^19.2.8",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9.39.2",
-    "eslint-config-next": "16.1.1",
-    "tailwindcss": "^4.1.18",
+    "eslint": "^9.39.4",
+    "eslint-config-next": "16.2.1",
+    "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3"
   }
 }
